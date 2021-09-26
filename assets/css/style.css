@@ -1,0 +1,858 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('Segoe UI.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('Segoe UI Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('Segoe UI Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('Segoe UI Bold Italic.woff') format('woff');
+    }
+
+header {
+    height: 100px;
+    background-color: #2571b7;
+}
+
+.header {
+    max-width: 1600px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logoimg {
+    display: flex;
+    margin-left: 50px;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul, .menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding-right: 70px;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.buttonlogin {
+    background-color: #000080;
+    height: 45px;
+    width: 160px;
+    color: white;
+    padding-top: 10px;
+    font-weight: normal;
+    margin-left: 30px;
+}
+
+.buttonlogin h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.menu-opener {
+    display: none;
+}
+
+/* MAIN */
+
+
+.banner {
+    background-image: url(../images/ballpen-blur-close-up-461077.png);
+    background-size: cover;
+    background-position:top;
+}
+
+.contentbanner {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+
+.banner--textbutton {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: auto;
+    justify-content: center;
+    padding-top: 250px;
+}
+
+.textbanner {
+    color: white;
+}
+
+.textbanner h1 {
+    font-size: 100px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.textbanner h2 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 100px;
+}
+
+.buttonbanner {
+    height: 75px;
+    width: 270px;
+    background-color: #00BFFF;
+    padding-top: 20px;
+}
+
+.buttonbanner h3 {
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+.imagesbanner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 330px;
+}
+
+.imagesbanner .logobanner {
+    height: 90px;
+    width: 350px;
+    padding: 20px 50px;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    max-width: 1600px;
+    height: 100%;
+    margin: auto;
+}
+
+.principal--text {
+    margin-top: 120px;
+}
+
+.principal--text h3 {
+    font-size: 23px;
+    color: gray;
+    font-weight: normal;
+    padding-left: 130px;
+    text-align: center;
+}
+
+.principal--text h3:first-child {
+    padding-left: 130px;
+}
+
+.principal--text h3:last-child {
+    margin-top: 50px;
+}
+
+strong {
+    color: orangered;
+}
+
+.products {
+    margin-top: 120px;
+    height: 100%;
+}
+
+.productscontent {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.products--text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 150px;
+}
+
+.products--text h1 {
+    margin-bottom: 50px;
+    color: #3A5FCD;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.products--text h3 {
+    font-size: 25px;
+    color: gray;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.products--offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+}
+
+#offers {
+    width: 720px;
+    height: 160px;    
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+}
+
+.offer--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+}
+
+#offers h3 {
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+}
+
+#offers h4 {
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    padding-right: 20px;
+}
+
+#offers img {
+    align-self: center;
+    width: 90px;
+    height: 90px;
+    margin: 35px;
+}
+
+.offer1 {
+    background-color: #5F9EA0;
+}
+
+.offer2 {
+    background-color: #FF6347;
+}
+
+.offer3 {
+    background-color: #2E8B57;
+}
+
+.offer4 {
+    background-color: #B5B5B5;
+}
+
+.offer5 {
+    background-color: #9F79EE;
+}
+
+.offer6 {
+    background-color: #DEB887;
+}
+
+.offer7 {
+    background-color: #EE6363;
+}
+
+.offer8 {
+    background-color: #DB7093;
+}
+
+.offer9 {
+    background-color: #4682B4;
+}
+
+.offer10 {
+    background-color: #548B54;
+}
+
+.benefits {
+    margin-top: 120px;
+    height: 100%;
+}
+
+.benefitscontent {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.benefits--text {
+    display: flex;
+    justify-content: center;        
+}
+
+.benefits--text h1 {
+    margin-bottom: 50px;
+    color: #3A5FCD;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.benefits--feature {
+    display: flex;
+    max-width: 1600px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.benefits--description1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+}
+
+.benefits--image1 {
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    background-color: #9ACD32;
+}
+
+.benefits--image1 img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 50px 50px;
+    
+}
+
+.benefits--description1 h3 {
+    font-size: 28px;
+    color: #9ACD32;
+    padding: 20px;
+    font-weight: normal;
+}
+
+.benefits--description1 h4 {
+    font-size: 20px;
+    font-weight: normal;
+    color: gray;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.benefits--button1 {
+    width: 150px;
+    height: 50px;
+    border: 3px solid #9ACD32;
+    text-align: center;
+    color: #9ACD32;
+    margin-top: 30px;
+    width: auto;
+}
+
+.benefits--button1 h3 {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.benefits--description2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+}
+
+.benefits--image2 {
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    background-color: #00BFFF;
+}
+
+.benefits--image2 img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 50px 50px;
+    
+}
+
+.benefits--description2 h3 {
+    font-size: 28px;
+    color: #00BFFF;
+    padding: 20px;
+    font-weight: normal;
+}
+
+.benefits--description2 h4 {
+    font-size: 20px;
+    font-weight: normal;
+    color: gray;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.benefits--button2 {
+    width: 150px;
+    height: 50px;
+    border: 3px solid #00BFFF;
+    text-align: center;
+    color: #00BFFF;
+    margin-top: 30px;
+    width: auto;
+}
+
+.benefits--button2 h3 {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.benefits--description3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+}
+
+.benefits--image3 {
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    background-color: #FFA500;
+}
+
+.benefits--image3 img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 50px 50px;
+    
+}
+
+.benefits--description3 h3 {
+    font-size: 28px;
+    color: #FFA500;
+    padding: 20px;
+    font-weight: normal;
+}
+
+.benefits--description3 h4 {
+    font-size: 20px;
+    font-weight: normal;
+    color: gray;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.benefits--button3 {
+    width: 150px;
+    height: 50px;
+    border: 3px solid #FFA500;
+    text-align: center;
+    color: #FFA500;
+    margin-top: 30px;
+    width: auto;
+}
+
+.benefits--button3 h3 {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.informations {
+    margin-top: 120px;
+    height: 100%;
+}
+
+.informationscontent {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.informations--text {
+    display: flex;
+    justify-content: center;  
+}
+
+.informations--text h1 {
+    margin-bottom: 50px;
+    color: #3A5FCD;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.informations--box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informations--description {
+    width: 400px;
+    height: 270px;
+    border: 5px solid #CFCFCF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.informations--description:nth-child(n+2) {
+    border-left: none;
+}
+
+.informations--description h3 {
+    color: #EE7600;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.informations--description h4 {
+    font-size: 20px;
+    font-weight: normal;
+    color: gray;
+    text-align: center;
+    margin-top: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.motivacional {
+    margin-top: 120px;
+    background-image: url(../images/achievement-adult-agreement-1391373.png);
+    background-size:cover;
+    background-position:center;
+}
+
+.motivacionalcontent {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.motivacional--text {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.motivacional--text h1 {
+    color: white;
+    font-size: 65px;
+    font-weight: normal;
+}
+
+.form {
+    margin-top: 120px;
+    height: 100%;
+}
+
+.formcontent {
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form--text h3 {
+    font-size: 32px;
+    color: gray;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form--fields {
+    width: 700px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e2e2e2;
+    padding: 50px 50px;
+}
+
+.blankfield, .activefield {
+    width: 600px;
+    height: 60px;
+    background-color: white;
+}
+
+.field, .activetext, h4 {
+    color: gray;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.activetext h4 {
+    color: #3A5FCD;
+}
+
+.activefield {
+    border: 2px solid #3A5FCD;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.form--button {
+    width: 600px;
+    height: 60px;
+    background-color: #00BFFF;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight:600;
+    padding-top: 10px;
+}
+
+footer {
+    margin-top: 120px;
+}
+
+.footerarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer--images {
+    display: flex;
+    align-items: center;
+}
+
+.footer--images img {
+    padding-right: 50px;
+}
+
+.footer--copyright {
+    margin-top: 20px;
+}
+
+.footer--copyright h4 {
+    color: #bbbbbb;
+}
+
+@media (max-width:450px) {
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between
+    }
+
+    .menu-opener {
+        width: 45px;
+        display: block;
+        margin-right: 130px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .buttonlogin {
+        margin-right: 50px;
+    }
+
+    .banner--textbutton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .banner--textbutton h1 {
+        font-size: 60px;
+    }
+
+    .banner--textbutton h2 {
+        font-size: 30px;
+    }
+
+    .principal {
+        margin-top: 120px;
+    }
+
+    .principal--text {
+        align-items: center;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .principal--text h3 {
+        font-size: 18px;
+        padding: 0px;
+    }
+
+    .principal--text h3 strong {
+        color: gray;
+        font-weight: 600;
+        padding: 0px;
+    }
+
+    .principal--text h3:first-child {
+        padding: 0px;
+    }
+
+    .products--text {
+        padding: 0px;
+    }
+
+    .products--text h3 {
+        font-size: 20px;
+    }
+
+    .products--offer {
+        display: flex;
+        flex-direction: column;
+        max-width: 449px;
+    }
+
+    #offers {
+        width: 380px;
+        margin: 20px 30px;
+    }
+
+    #offers h3 {
+        font-size: 20px;
+    }
+
+    #offers h4 {
+        font-size: 13px;
+    }
+
+    #offers img {
+        width: 60px;
+        height: 60px;
+        margin: 20px;
+    }
+
+    .benefits--feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits--description1, .benefits--description2, .benefits--description3 {
+        margin-bottom: 40px;
+        border-bottom: 5px solid gray;
+        padding: 20px;
+    }
+
+    .informations--text h1 {
+        font-size: 40px;
+    }
+
+    .informations--box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informations--description:nth-child(n+2){
+        border-top: none;
+        border-left: 5px solid #CFCFCF;;
+    }
+
+    .motivacional--text h1{
+        font-size: 25px;
+        padding: 10px;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .form--text h3 {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .form--fields {
+        width: 400px;
+        margin: auto;
+    }
+
+    .blankfield {
+        width: 300px;
+    }
+
+    .form--button {
+        width: 300px;
+    }
+
+    .footer--images div {
+        display: flex;
+        padding: 0px;
+        margin-right: 20px;
+    }
+
+    .footer--images img {
+        padding: 5px;
+    }
+
+
+
+
+}
